@@ -7,7 +7,7 @@ RUN \
   apt-get update -qq && \
   apt-get install -y netcat && \
   rm -rf /var/lib/apt/lists/* && \
-  pip install circus gunicorn
+  pip install tornado==4.5.3 circus gunicorn
 
 # Install taiga-back
 RUN \
